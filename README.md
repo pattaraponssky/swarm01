@@ -30,30 +30,30 @@
 
   - สร้างไฟล์คำสั่งไว้ docker-compose.yaml
 
-    ```version: '3.3'
-services:
-  api:
-    image: pattaraponssky/swarm01-fastapi:1.0
-    container_name: fastapi-application
-    environment:
-     PORT: 8000
-    restart: "no"
-    networks:
-      - webproxy
-    logging: 
-      driver: json-file
-    deploy:
-      replicas: 1
-      labels:
-        - traefik.docker.network=webproxy
-        - traefik.enable=true
-        - traefik.http.routers.spcn11swarm01-https.entrypoints=websecure
-        - traefik.http.routers.spcn11swarm01-https.rule=Host("spcn11swarm01.xops.ipv9.me")
-        - traefik.http.routers.spcn11swarm01-https.tls.certresolver=default
-        - traefik.http.services.spcn11swarm01.loadbalancer.server.port=8000   
-networks:
-  webproxy:
-    external: true```
+   version: '3.3'
+   services:
+     api:
+       image: pattaraponssky/swarm01-fastapi:1.0
+       container_name: fastapi-application
+       environment:
+        PORT: 8000
+       restart: "no"
+       networks:
+         - webproxy
+       logging: 
+         driver: json-file
+       deploy:
+         replicas: 1
+         labels:
+           - traefik.docker.network=webproxy
+           - traefik.enable=true
+           - traefik.http.routers.spcn11swarm01-https.entrypoints=websecure
+           - traefik.http.routers.spcn11swarm01-https.rule=Host("spcn11swarm01.xops.ipv9.me")
+           - traefik.http.routers.spcn11swarm01-https.tls.certresolver=default
+           - traefik.http.services.spcn11swarm01.loadbalancer.server.port=8000   
+   networks:
+     webproxy:
+       external: true
 
  - deploy stack ที่ https://portainer.ipv9.me/
 
