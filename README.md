@@ -61,7 +61,7 @@
 
 - deploy stack ที่ https://portainer.ipv9.me/ 
 
-![image](https://user-images.githubusercontent.com/113360594/224477818-c556383d-dc71-4449-9ba1-2e2d96a63ebe.png)
+![image](https://user-images.githubusercontent.com/113360594/224478743-ef9649a9-197d-45b0-8d9e-b9e21e55ac52.png)
 
 - ตรวจสอบ url ที่ใช้งาน
    
