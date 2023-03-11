@@ -16,7 +16,11 @@
 
 - แก้ไขข้อความที่ต้องการจะแสดงใน main.py
 
+![image](https://user-images.githubusercontent.com/113360594/224477986-e75ff722-8d85-4727-b36c-41f2d44ea2ea.png)
+
 - build images จากตัว Dockerfile
+
+![image](https://user-images.githubusercontent.com/113360594/224477756-2ffc6121-fbb5-4be0-962c-10beadf07996.png)
 
 - เข้าสู่ระบบ docker hub โดยใช้คำสั่ง 
 
@@ -28,7 +32,7 @@
 
 ### STACK DEPLOY
 
- - สร้างไฟล์คำสั่งไว้ docker-compose.yaml
+ - สร้างไฟล์คำสั่งไว้
 
         version: '3.3'
         services:
@@ -55,8 +59,12 @@
           webproxy:
             external: true
 
-- deploy stack ที่ https://portainer.ipv9.me/
+- deploy stack ที่ https://portainer.ipv9.me/ 
+
+![image](https://user-images.githubusercontent.com/113360594/224477818-c556383d-dc71-4449-9ba1-2e2d96a63ebe.png)
 
 - ตรวจสอบ url ที่ใช้งาน
-    
+   
    - https://spcn11swarm01.xops.ipv9.me/
+
+![image](https://user-images.githubusercontent.com/113360594/224477935-7b018e2f-0cd8-4e8b-b8e9-3ec17d1c8dba.png)
