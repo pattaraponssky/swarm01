@@ -1,9 +1,11 @@
 services:
-  web:
+  api:
     build:
-      context: app
+      context: .
       target: builder
-    ports: 
-      - '80:80'
-    volumes:
-      - ./app:/var/www/html/
+    container_name: fastapi-application
+    environment:
+      PORT: 8000
+    ports:
+      - '8000:8000'
+    restart: "no"
